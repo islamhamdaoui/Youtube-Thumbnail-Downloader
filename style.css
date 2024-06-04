@@ -33,7 +33,7 @@ body {
     margin-top: 10px;
  }
 
- .url-input {
+ .urlInput {
     margin: 30px 0;
  }
 
@@ -93,9 +93,18 @@ body {
    overflow: hidden;
  }
 
+ .preview-area.active{
+  border: 2px dashed royalblue;
+ }
+
+
  .preview-area .icon {
    color: royalblue;
    font-size: 80px;
+ }
+
+ .preview-area.active .icon , .preview-area.active span {
+  display: none;
  }
 
  .preview-area span {
@@ -107,6 +116,10 @@ margin-top: 25px;
    width: 100%;
    border-radius: 5px;
    display: none;
+ }
+
+ .preview-area.active .thumbnail {
+  display: block;
  }
  .download-btn {
    height: 53px;
